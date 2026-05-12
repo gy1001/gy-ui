@@ -1,14 +1,14 @@
 {
   "compilerOptions": {
-    "target": "ES2020",
-    "module": "ESNext",
-    "moduleResolution": "bundler",
-    "strict": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "declaration": true,
-    "declarationMap": true,
-    "sourceMap": true
+    "target": "ES2020", // 编译成哪个版本的 JS，ES2020 现代浏览器都支持
+    "module": "ESNext", // 用最新的模块语法 import/export
+    "moduleResolution": "bundler", // 模块解析方式，bundler 适合 Vite/Webpack
+    "strict": true, // 严格模式总开关：开启所有类型检查
+    "esModuleInterop": true, // 允许用 import 引入 commonjs 模块
+    "skipLibCheck": true, // 跳过第三方库 .d.ts 检查，加快编译
+    "forceConsistentCasingInFileNames": true, // 文件名大小写敏感（Mac 和 Linux 一致）
+    "declaration": true, // 生成 .d.ts 类型声明文件（给别人用时有智能提示）
+    "declarationMap": true, // 生成声明文件的 sourcemap（方便调试）
+    "sourceMap": true // 生成源码映射（方便调试）
   }
 }
