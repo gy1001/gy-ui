@@ -1,0 +1,17 @@
+{
+  "extends": "../tsconfig.base.json",
+  // include 涵盖了组件源码目录和 play 自身的所有 ts/vue 文件。
+  "include": [
+    "../packages/components/src",
+    "./**/*.ts",
+    "./**/*.vue"
+  ],
+  "compilerOptions": {
+    "outDir": "dist",
+    "rootDir": "..", // 让 TypeScript 能从根目录统一计算输出路径。
+    "jsx": "preserve",
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true, // 允许直接在 .ts 里 import 带 .vue 或 .ts 后缀的文件。
+    "noEmit": true // play 目录只是本地调试，不需要生成声明文件，避免和源码的输出冲突。
+  }
+}
