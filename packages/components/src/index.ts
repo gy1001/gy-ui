@@ -7,5 +7,6 @@ import StatusTag from './StatusTag.vue'
 import FnForm from './FnForm.vue'
 import FnFormItem from './FnFormItem.vue'
 
+export { default as MoneyInput } from './MoneyInput.vue'
 export { Button, StatusTag, FnForm, FnFormItem }
 export * from './form-types'
